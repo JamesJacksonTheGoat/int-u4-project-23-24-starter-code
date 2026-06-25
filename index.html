@@ -7,17 +7,126 @@
         <script defer src="script.js"></script>
     </head>
     <body>
+        <div style="background-image: url('https://wallpapers.com/images/featured/nba-xtmd671migdy7xa7.jpg' );">
         <div class="title">
-            <h1>Your Quiz Title Here!</h1>
+            <h1>Pick A Food To Find Out Which NBA Player You Are!</h1>
         </div>
-        <div class="questions">
-            <h4>User Question #1</h4>
-            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-06/24/16/asset/815a5287257c/anigif_sub-buzz-4360-1624553394-78_preview.gif?output-quality=auto&output-format=auto&downsize=360:*">
-            <h4>User Question #2</h4>
-            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-11/19/17/asset/buzzfeed-prod-web-05/anigif_sub-buzz-18467-1542667455-1.gif">
+
+        <!-- Question 1 -->
+        <div id="q1" class="questions">
+            <h4>Question #1 - Pick a Fry</h4>
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="https://www.allrecipes.com/thmb/_OmvIZ1nG6yxA85rJjqAMB9t58I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7775399-waffle-fries-ddmfs-4x3-0078-b66e170430614ef2941e5f59de258556.jpg">
+                    <button class="choice-btn" data-choice="A">Waffle Fries</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Herbed-Steak-Fries_EXPS_FT21_33239_F_1203_1.jpg">
+                    <button class="choice-btn" data-choice="B">Steak Fries</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.airfryeryum.com/wp-content/uploads/2022/03/75E99EB7-E995-499A-A9AE-705E2B47A51D-768x1024.jpeg">
+                    <button class="choice-btn" data-choice="C">Curly Fries</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.cookingclassy.com/wp-content/uploads/2021/10/baked-sweet-potato-fries-12.jpg">
+                    <button class="choice-btn" data-choice="D">Sweet Potato Fries</button>
+                </div>
+            </div>
         </div>
-        <div class="result">
-            This is where the user will see their quiz result.
+
+        <!-- Question 2 -->
+        <div id="q2" class="questions hidden">
+            <h4>Question #2 - Pick a Pancake</h4>
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="https://www.marthastewart.com/thmb/Vgb9cQSlegZz5fcoSbkkqyHPmHY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/338185-basic-pancakes-09-00b18f8418fd4e52bb2050173d083d04.jpg">
+                    <button class="choice-btn" data-choice="A">Regular Pancakes</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://shortgirltallorder.com/wp-content/uploads/2020/03/chocolate-chip-pancakes-square-3.jpg">
+                    <button class="choice-btn" data-choice="B">Chocolate Chip Pancakes</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.thespruceeats.com/thmb/9IRYWPZ9ydGFZFtxthmtAR150VM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/blueberry-ricotta-pancakes-541279742-5ab2d59d04d1cf0036f81d80.jpg">
+                    <button class="choice-btn" data-choice="C">Blueberry Pancakes</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.dinneratthezoo.com/wp-content/uploads/2015/04/banana-pancakes-4-500x500.jpg">
+                    <button class="choice-btn" data-choice="D">Banana Pancakes</button>
+                </div>
+            </div>
         </div>
+
+        <!-- Question 3 -->
+        <div id="q3" class="questions hidden">
+            <h4>Question #3 - Pick an Ice Cream</h4>
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="https://www.cookingclassy.com/wp-content/uploads/2023/07/chocolate-ice-cream-5.jpg">
+                    <button class="choice-btn" data-choice="A">Chocolate Ice Cream</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://bakerstable.net/wp-content/uploads/2024/07/vanilla-ice-cream-2024-7-500x500.jpg">
+                    <button class="choice-btn" data-choice="B">Vanilla Ice Cream</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://handmadefarmhouse.com/wp-content/uploads/2025/06/IMG_6650.jpg">
+                    <button class="choice-btn" data-choice="C">Strawberry Ice Cream</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://cdn.aboutamom.com/uploads/2024/12/a-cookies_and_cream_ice_cream_recipe-feature-1.jpeg">
+                    <button class="choice-btn" data-choice="D">Cookies N Cream</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div id="q4" class="questions hidden">
+            <h4>Question #4 - Pick a Pizza</h4>
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="https://www.cookingclassy.com/wp-content/uploads/2014/07/pepperoni-pizza6+srgb..jpg">
+                    <button class="choice-btn" data-choice="A">Pepperoni Pizza</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://thestayathomechef.com/wp-content/uploads/2023/07/Easy-Cheese-Pizza_Square-1.jpg">
+                    <button class="choice-btn" data-choice="B">Cheese Pizza</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://145310916.cdn6.editmysite.com/uploads/1/4/5/3/145310916/ULEB2765WEC4DTCZYUGXNXQQ.jpeg">
+                    <button class="choice-btn" data-choice="C">Meat Lovers Pizza</button>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.thursdaynightpizza.com/wp-content/uploads/2022/06/veggie-pizza-featured-image-3.png">
+                    <button class="choice-btn" data-choice="D">Veggie Pizza</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result: Stephen Curry -->
+        <div id="result-curry" class="questions result-screen hidden">
+            <h4>You got... Stephen Curry!</h4>
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXlubDAxdHVidDI4aGY1YnE4a3pzeWxnbXFjMGtqdzl1djFlZWM0cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uVvKsbEW6dFiCcQF8z/giphy.webp">
+        </div>
+
+        <!-- Result: LeBron James -->
+        <div id="result-lebron" class="questions result-screen hidden">
+            <h4>You got... LeBron James!</h4>
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnAzaTc4dHduZzd4ZGZzdTN5ZDF2OHRoNzk2dWxhNHF4dnN0bXRwbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YsfmNiKD3go2nvFw3k/200.webp">
+        </div>
+
+        <!-- Result: Anthony Edwards -->
+        <div id="result-ant" class="questions result-screen hidden">
+            <h4>You got... Anthony Edwards!</h4>
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjRsdzNwMDhuNDR5d2R3anUwcW9xb2k4aWV3bDBmaWtycHQ4eHY1eSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xGyeeMZElcMU2ptPJ2/giphy.webp">
+        </div>
+
+        <!-- Result: Victor Wembanyama -->
+        <div id="result-wemby" class="questions result-screen hidden">
+            <h4>You got... Victor Wembanyama!</h4>
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGNzMGhwMjRncHFhemttcnV1anIyaGZvZnVwZGlxdmFqeGtjMWxwcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GfQQwwz7Mgt5s83DIE/giphy.webp">
+        </div>
+
     </body>
 </html>

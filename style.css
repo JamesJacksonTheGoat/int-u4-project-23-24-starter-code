@@ -1,7 +1,7 @@
 /* General body styling */
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #1218d2;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -10,7 +10,7 @@ body {
 /* Title section styling */
 .title h1 {
     text-align: center;
-    color: #333;
+    color: #000000;
 }
 
 /* Questions section styling */
@@ -23,14 +23,67 @@ body {
 }
 
 .questions h4 {
-    color: #666;
+    color: #000000;
 }
 
 .questions img {
-    width: 100%; /* Make images responsive */
+    width: 45%; /* Make images responsive */
     height: auto;
     border-radius: 8px;
     margin-top: 10px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+}
+
+.image-grid img {
+    width: 100%;
+    margin: 0;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer-text {
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-screen {
+    text-align: center;
+}
+
+.result-screen img {
+    width: 300px;
 }
 
 /* Result section styling */
@@ -42,3 +95,4 @@ body {
     border-radius: 8px;
     font-size: 1.2em;
 }
+
